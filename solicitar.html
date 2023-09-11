@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font inicia -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- font fin -->
+<!-- BS inicia -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+<!-- BS fin -->
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- navbar inicia -->
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/perro en la tina.png" alt="">
+            <span>El Castillo De Tu Mascota</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perros.html">Perro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navbar fin -->
+    <h2 id="sec1">Formulario de pedido</h2>
+    
+    <form id="pedido-form" action="https://api.whatsapp.com/send?phone=+56971678084" method="POST">
+      <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      
+      <div class="mb-3">
+      <label for="producto" class="form-label">Producto:</label>
+      <select id="producto" name="producto" required>
+      <option value="">Seleccione un producto</option>
+      <optgroup label="Perro">
+      <option value="Arena para gatos">Arena para gatos</option>
+      <option value="Comida húmeda para gatos">Comida húmeda para gatos</option>
+      <option value="Juguetes para gatos">Juguetes para gatos</option>
+      </optgroup>
+      <optgroup label="Perros">
+      <option value="Comida seca para perros">Comida seca para perros</option>
+      <option value="Snacks para perros">Snacks para perros</option>
+      <option value="Camas para perros">Camas para perros</option>
+      </optgroup>
+      </select>
+      </div>
+      
+      <div class="mb-3">
+      <label for="cantidad" class="form-label">Cantidad:</label>
+      <input type="number" class="form-control" id="cantidad" name="cantidad" required>
+      </div>
+      
+      <button type="button" onclick="mostrarResumen()">Mostrar resumen</button>
+      <button type="submit" class="solicitar-btn">Solicitar</button>
+      </form>
+      
+      <div class="resumen-pedido" id="resumen-pedido">
+      <h3>Resumen del pedido:</h3>
+      <div id="resumen"></div>
+      </div>
+      
+      <script>
+         function mostrarResumen() {
+           var nombre = document.getElementById("nombre").value;
+           var producto = document.getElementById("producto").value;
+           var cantidad = document.getElementById("cantidad").value;
+      
+           var resumen = "Nombre: " + nombre + "<br>";
+           resumen += "Producto: " + producto + "<br>";
+           resumen += "Cantidad: " + cantidad;
+      
+           document.getElementById("resumen").innerHTML = resumen;
+           document.getElementById("resumen-pedido").classList.add("active");
+         }
+      </script>
+   
+   
+    <!-- Inicio footer -->
+    <footer>
+      <div>
+          <p>Todos los derechos reservados por importadora Castillo Ltda.</p>
+          <div class="redes">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+          </div>
+      </div>
+  </footer>
+  <!-- fin footer -->
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BS inicia -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+  crossorigin="anonymous"></script>
+<!-- BS fin -->
+</body>
+</html>

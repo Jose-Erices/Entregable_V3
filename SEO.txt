@@ -1,0 +1,9 @@
+ Entregable_V3
+
+Las mejoras que he tomado para optimizar el HTML con SCSS, Bootstrap e imágenes para mejorar el SEO. fueron los siguientes pasos:
+
+Uso de etiquetas semánticas: he utilizado etiquetas HTML semánticas como <header>, <nav>, <main>, <section>, <article>, <aside>, y <footer> estructurar el contenido de manera significativa. Esto ayuda a los motores de búsqueda a entender mejor la jerarquía y relevancia de mi contenido.
+Implementación de SCSS: He utilizado SCSS (Sass) como preprocesador CSS para organizar y modularizar el código CSS. Esto facilita el mantenimiento y la escalabilidad del código, lo que puede tener un impacto positivo en el rendimiento y la legibilidad.
+Integración de Bootstrap: He utilizado Bootstrap para aprovechar su sistema de rejilla, componentes y estilos predefinidos. Esto me permite crear un diseño responsive y consistente en mi sitio web, lo cual es importante para mejorar la experiencia del usuario y el SEO.
+Optimización de imágenes: He optimizado las imágenes del sitio web para mejorar el tiempo de carga y el rendimiento. Esto incluye reducir el tamaño de archivo de las imágenes sin comprometer demasiado la calidad, utilizar formatos de imagen adecuados como JPEG o PNG
+Uso de etiquetas de encabezado: He utilizado correctamente las etiquetas de encabezado (<h1>, <h2>, etc.) para estructurar el contenido y resaltar las palabras clave relevantes

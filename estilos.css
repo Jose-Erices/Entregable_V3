@@ -415,6 +415,16 @@ footer i {
   margin-bottom: 10px;
 }
 
+.col-md-6 {
+  margin: auto;
+}
+
+.imgp {
+  margin: auto;
+  flex: auto;
+  display: block;
+}
+
 /* Estilos adicionales html gatos y perros */
 .container {
   margin-top: 50px;

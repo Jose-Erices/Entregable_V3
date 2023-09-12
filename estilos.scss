@@ -257,10 +257,6 @@ h3{
     text-align: center;
 }
 
-
-
-
-
 .btn{
     border-radius: 10px;
     background-image: linear-gradient(to top, #08cfb5, #03b8a3, #02a190, #038b7e, #06766c) !important;
@@ -438,6 +434,14 @@ footer i {
     max-width: 200px;
     height: auto;
     margin-bottom: 10px;
+  }
+  .col-md-6{
+    margin: auto;
+  }
+  .imgp{
+    margin: auto;
+    flex: auto;
+    display: block;
   }
 /* Estilos adicionales html gatos y perros */
 .container {

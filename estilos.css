@@ -11,17 +11,11 @@ html {
 .navbar {
   height: 100px;
   background-image: linear-gradient(to top, #08cfb5, #03b8a3, #02a190, #038b7e, #06766c);
-  box-shadow: 0 0 5px rgb(32, 146, 146) !important;
+  box-shadow: 0 2px 5px rgb(32, 146, 146) !important;
   z-index: 9999;
 }
 .navbar li a:hover {
   color: orange !important;
-}
-.navbar .navbar-brand img {
-  height: 60px;
-}
-.navbar .navbar-brand img {
-  height: 60px;
 }
 .navbar .navbar-brand img {
   height: 60px;
@@ -32,6 +26,9 @@ html {
   color: #fff;
   text-shadow: 5px 5px 5px black;
   font-family: "Times New Roman", Times, serif;
+}
+.navbar .navbar-toggler-icon {
+  text-shadow: 5px 5px 5px black;
 }
 .navbar .d-block {
   height: 400px;
